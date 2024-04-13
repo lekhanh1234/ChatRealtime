@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">messenger</string>
+    <string name="open_drawer">open_drawer</string>
+    <string name="close_drawer">close_drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="StartUp">
+        <State />
+      </entry>
+      <entry key="logIn">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\HP\.android\avd\Pixel_4_XL_API_30.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-01-11T13:46:45.858503900Z" />
+        </State>
+      </entry>
+      <entry key="profile_myself">
+        <State />
+      </entry>
+      <entry key="signUp">
+        <State />
+      </entry>
+      <entry key="userChat">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="65dp"
+    android:layout_height="90dp"
+    android:background="#009688">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/RIV_FriendAvata"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@color/color_fg1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/boy_avata"
+        app:riv_oval="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/test"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/TV_FriendName"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="65dp"
+        android:textSize="11dp"
+        android:background="@color/color_fg1"
+        android:text="Lê khánh"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

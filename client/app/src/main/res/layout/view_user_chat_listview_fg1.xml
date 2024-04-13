@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avata_user"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:background="@color/color_fg1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avata_girl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/TV_AccountName"
+        android:layout_width="250dp"
+        android:layout_height="38dp"
+        android:paddingTop="7dp"
+        android:background="@color/color_fg1"
+        android:textColor="@color/black"
+        android:gravity="center|start"
+        android:paddingStart="15dp"
+        android:textSize="21dp"
+        android:text="Phương Nhi"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintStart_toEndOf="@+id/avata_user"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TV_Content"
+        android:layout_width="230dp"
+        android:layout_height="37dp"
+        android:paddingBottom="-2dp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/black"
+        android:background="@color/color_fg1"
+        android:gravity="start|center"
+        android:paddingStart="17dp"
+        android:paddingRight="8dp"
+        android:text="Ngày hôm qua,không phải là ngày hôm nay"
+        android:textSize="17dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintStart_toEndOf="@+id/avata_user"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TV_LastChatDate"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/color_fg1"
+        android:gravity="start|center"
+        android:paddingRight="10dp"
+        android:text="11/7/2023"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TV_Content"
+        app:layout_constraintTop_toTopOf="@+id/TV_AccountName" />
+
+    <ImageView
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42"
+        app:srcCompat="@drawable/icon_tick"
+        android:tint="#9E9E9E"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

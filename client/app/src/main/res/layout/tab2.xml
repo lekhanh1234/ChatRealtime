@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:orientation="vertical"
+    android:layout_height="70dp">
+    <ImageView
+        android:id="@+id/image_view_icontab"
+        android:src="@drawable/icon_users"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingTop="8dp"
+        >
+    </ImageView>
+    <TextView
+        android:id="@+id/content_tab"
+        android:height="30dp"
+        android:layout_width="70dp"
+        android:paddingBottom="10dp"
+        android:text="Danh bạ"
+        android:textSize="12dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:layout_height="wrap_content"></TextView>
+</LinearLayout>

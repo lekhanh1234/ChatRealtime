@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.messenger">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:replace="android:maxSdkVersion" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:remove="android:maxSdkVersion" />
+
+    <application
+        android:name=".ui.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Messenger"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.UserPictureDetail"
+            android:theme="@style/Base.Theme.supportActionbar"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AllUserPicture"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LookAvatar"
+            android:exported="false" />
+        <activity
+            android:name=".ui.UserPost"
+            android:theme="@style/Base.Theme.supportActionbar"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AddPreferencePost"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ChangeDescribleInfo"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AllFriend"
+            android:exported="false" />
+        <activity
+            android:name=".ui.BlockUser"
+            android:exported="false"
+            android:theme="@style/Base.Theme.supportActionbar" />
+        <activity
+            android:name=".ui.ShowState"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SetUserCanFind"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ChangePassword"
+            android:exported="false"
+            android:theme="@style/Base.Theme.supportActionbar" />
+        <activity
+            android:name=".ui.FriendRequestSent"
+            android:exported="false"
+            android:theme="@style/Base.Theme.supportActionbar" />
+        <activity
+            android:name=".ui.FriendRequestToMyAccount"
+            android:exported="false"
+            android:theme="@style/Base.Theme.supportActionbar" />
+        <activity
+            android:name=".ui.MessageWating"
+            android:exported="false"
+            android:theme="@style/Base.Theme.supportActionbar" />
+
+        <receiver
+            android:name=".Service.ServiceSendRetrieveMessage$NetworkChangeReceiver"
+            android:exported="true"
+            android:label="NetworkChangeReceiver"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.PickPictureToSendMessage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.EditPrivacyInfo"
+            android:exported="false" />
+
+        <service android:name=".Service.ServiceSendRetrieveMessage" />
+
+        <activity
+            android:name=".ui.User"
+            android:exported="false" />
+        <activity
+            android:name=".ui.InteractWithAccountUser"
+            android:exported="false" />
+        <activity
+            android:name=".ui.HelpAndSupport"
+            android:exported="false"
+            android:theme="@style/Base.Theme.supportActionbar" />
+        <activity
+            android:name=".ui.SetUpAndPrivacy"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PickPictureToAvatar"
+            android:exported="false"
+            android:theme="@style/Base.Theme.pick_pictureforprofile" />
+        <activity
+            android:name=".ui.ProfileMyself"
+            android:exported="false" />
+        <activity
+            android:name=".ui.FindUser"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".ui.UserChat"
+            android:exported="false"
+            android:theme="@style/Base.Theme.USEDCHAT" />
+        <activity
+            android:name=".ui.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".ui.App"
+            android:exported="false" />
+        <activity
+            android:name=".ui.StartUpNext"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PickMyProfilePicture"
+            android:exported="false" />
+        <activity
+            android:name=".ui.StartUp"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
